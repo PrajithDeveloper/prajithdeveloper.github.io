@@ -1,21 +1,117 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            body{
-                background-color: #33cccc;
-            }
-         h2{
-            margin: 0;
-         }
-        </style>    
-    </head>
+
+<head>
+    <style>
+        /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px;
+            /* Remove this if you don't want the 3D effect */
+        }
+
+        /* This container is needed to position the front and back side */
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        /* Do an horizontal flip when you move the mouse over the flip box container */
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        /* Position the front and back side */
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            /* Safari */
+            backface-visibility: hidden;
+        }
+
+        /* Style the front side (fallback if image is missing) */
+        .flip-card-front {
+            background-color: rgb(248, 248, 248);
+            color: #16718df5;
+            font-family: cursive;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        /* Style the back side */
+        .flip-card-back {
+            background-color: #16718df5;
+            color: white;
+            transform: rotateY(180deg);
+            font-family: cursive;
+        }
+
+        .outer>* {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .outer {
+            padding: 100px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
 <body>
-    <header>
-      
-    </header>
-   
-        <h2>My personal website using github pages</h2>
-   
+    <div class="outer">
+        <div class="flip-card" id="div1">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h1>ME</h1>
+                </div>
+                <div class="flip-card-back">
+                    <h1>Prajith P</h1>
+                    <p>Software Developer</p>
+                    <p>Seeker</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card" id="div2">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h1>SKILLS</h1>
+                </div>
+                <div class="flip-card-back">
+                    <p>Java</p>
+                    <p>Spring boot</p>
+                    <p>Hibernate</p>
+                    <p>MySQL</p>
+                    <p>JavaScript | jQuery</p>
+                    <p>HTML | CSS </p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card" id="div3">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h1>PROJECTS</h1>
+                </div>
+                <div class="flip-card-back">
+                    <p>RetailBilling Application</p>
+                    <p>Medical Store Management System</p>
+                    <p>Digital Learning Mobile App</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
+
 </html>
