@@ -2,7 +2,10 @@
 <html>
 
 <head>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=cursive">
     <style>
+       
         /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
         .flip-card {
             background-color: transparent;
@@ -41,7 +44,7 @@
 
         /* Style the front side (fallback if image is missing) */
         .flip-card-front {
-            background-color: rgb(248, 248, 248);
+            background-color: rgb(228, 222, 222);
             color: #f3f3f3f5;
             font-family: cursive;
             font-size: 20px;
@@ -74,6 +77,13 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
+        .message{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: cursive;
+            color: #fb5607;
+        }
     </style>
 </head>
 
@@ -82,9 +92,8 @@
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="image/image_part_001.png" width="300px" height="300px" alt="django"></img>
+                    <img src="image_part_001.png" width="300px" height="300px" alt="django"></img>
                     <div class="centered"><h1>ME</h1></div>
-                    <!--   -->
                 </div>
                 <div class="flip-card-back">
                     <h1>Prajith P</h1>
@@ -97,7 +106,7 @@
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="image/image_part_002.png" width="300px" height="300px" alt="django"></img>
+                    <img src="image_part_002.png" width="300px" height="300px" alt="django"></img>
                     <div class="centered"><h1>SKILLS</h1></div>
                 </div>
                 <div class="flip-card-back">
@@ -113,7 +122,7 @@
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="image/image_part_003.png" width="300px" height="300px" alt="django"></img>
+                    <img src="image_part_003.png" width="300px" height="300px" alt="django"></img>
                     <div class="centered"><h1>PROJECTS</h1></div>
                 </div>
                 <div class="flip-card-back">
@@ -124,6 +133,7 @@
             </div>
         </div>
     </div>
+    <div class="message">L e t's   H a v e   F u n !</div>
 
 
 </body>
