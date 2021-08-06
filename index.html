@@ -42,10 +42,9 @@
         /* Style the front side (fallback if image is missing) */
         .flip-card-front {
             background-color: rgb(248, 248, 248);
-            color: #16718df5;
+            color: #f3f3f3f5;
             font-family: cursive;
             font-size: 20px;
-            /* text-align: center; */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -53,11 +52,11 @@
 
         /* Style the back side */
         .flip-card-back {
-            background-color: #16718df5;
+            background-color: #FB8500;
             color: white;
             transform: rotateY(180deg);
-            font-family: cursive;
-        }
+             font-family: cursive;
+            }
 
         .outer>* {
             display: inline-block;
@@ -68,6 +67,13 @@
             padding: 100px 0;
             text-align: center;
         }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 
@@ -76,7 +82,9 @@
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <h1>ME</h1>
+                    <img src="image/image_part_001.png" width="300px" height="300px" alt="django"></img>
+                    <div class="centered"><h1>ME</h1></div>
+                    <!--   -->
                 </div>
                 <div class="flip-card-back">
                     <h1>Prajith P</h1>
@@ -89,7 +97,8 @@
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <h1>SKILLS</h1>
+                    <img src="image/image_part_002.png" width="300px" height="300px" alt="django"></img>
+                    <div class="centered"><h1>SKILLS</h1></div>
                 </div>
                 <div class="flip-card-back">
                     <p>Java</p>
@@ -104,7 +113,8 @@
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <h1>PROJECTS</h1>
+                    <img src="image/image_part_003.png" width="300px" height="300px" alt="django"></img>
+                    <div class="centered"><h1>PROJECTS</h1></div>
                 </div>
                 <div class="flip-card-back">
                     <p>RetailBilling Application</p>
