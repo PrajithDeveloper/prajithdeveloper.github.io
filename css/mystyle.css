@@ -82,5 +82,8 @@ body {
     justify-content: center;
     font-family: cursive;
     /* color: #fb5607; */
+    color: #ac0617; 
+}
+.message:hover{
     color: #FFBA08;
 }
