@@ -53,11 +53,10 @@ body {
 /* Style the back side */
 .flip-card-back {
     background-color: #FB8500;
-    /* background-color: #fb5607; */
     color: white;
     transform: rotateY(180deg);
-    font-size: 14px;
-    font-family:monospace,sans-serif;
+    font-size: 15px;
+    font-family:"Cutive Mono",sans-serif;
   
 }
 
