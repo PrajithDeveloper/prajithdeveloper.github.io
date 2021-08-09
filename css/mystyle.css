@@ -87,3 +87,7 @@ body {
 .message:hover{
     color: #FFBA08;
 }
+.image{
+    max-width:100%;
+    height:auto;
+}
