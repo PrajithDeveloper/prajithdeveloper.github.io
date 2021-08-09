@@ -42,10 +42,7 @@ body {
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
     background-color: rgb(228, 222, 222);
-  color: #f3f3f3f5; 
-    /* color: #6A040F; */
-    /* font-family: Cursive, Verdana, Geneva, Tahoma, sans-serif; */
-    /* font-family: "Audiowide", sans-serif; */
+    color: #f3f3f3f5; 
     font-family: "Audiowide", sans-serif;
     font-size: 14px;
     display: flex;
@@ -60,7 +57,7 @@ body {
     color: white;
     transform: rotateY(180deg);
     font-size: 14px;
-  font-family: Cursive, Verdana, Geneva, Tahoma, sans-serif;
+    font-family:monospace,sans-serif;
   
 }
 
@@ -85,9 +82,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: cursive;
-    /* color: #fb5607; */
+    font-family: Audiowide, sans-serif;
     color: #ac0617; 
+    font-size: 2vw;
 }
 .message:hover{
     color: #FFBA08;
