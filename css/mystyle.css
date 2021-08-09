@@ -1,5 +1,6 @@
 body {
     background-color: #6A040F;
+    background-image: linear-gradient(to right, #f48c06, #e85d04);
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -7,8 +8,7 @@ body {
     background-color: transparent;
     width: 300px;
     height: 250px;
-    /* border: 1px solid #f1f1f1; */
-    box-shadow: 5px 5px 10px #4F030A;
+    
     perspective: 1000px;
     /* Remove this if you don't want the 3D effect */
 }
@@ -57,7 +57,7 @@ body {
     transform: rotateY(180deg);
     font-size: 15px;
     font-family:"Cutive Mono",sans-serif;
-  
+    box-shadow: 5px 5px 10px #e85d04;
 }
 
 .outer>* {
@@ -82,7 +82,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: Audiowide, sans-serif;
-    color: #ac0617; 
+    color: #e85d04; 
 }
 .message:hover{
     color: #FFBA08;
@@ -90,4 +90,6 @@ body {
 .image{
     max-width:100%;
     height:auto;
+    box-shadow: 5px 5px 10px #C94F03;
+    
 }
