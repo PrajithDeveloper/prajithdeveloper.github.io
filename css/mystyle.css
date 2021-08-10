@@ -1,5 +1,5 @@
 body {
-    background-color: #6A040F;
+    /* background-color: #6A040F; */
     background-image: linear-gradient(to right, #f48c06, #e85d04);
 }
 
@@ -93,3 +93,12 @@ body {
     box-shadow: 5px 5px 10px #C94F03;
     
 }
+.social-links{
+    text-align: center;
+    padding: 10px;
+}
+.linkedin{
+    width:60px;
+     height:60px;
+}
+
