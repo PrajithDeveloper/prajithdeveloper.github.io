@@ -76,17 +76,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-.message {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Audiowide, sans-serif;
-    color: #e85d04; 
-}
-.message:hover{
-    color: #f3f3f3f5; 
-}
 .image{
     max-width:100%;
     height:auto;
@@ -94,7 +83,7 @@ body {
     
 }
 .social-links{
-    text-align: center;
+    float: right;
     padding: 10px;
 }
 .linkedin{
