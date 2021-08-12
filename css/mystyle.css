@@ -83,13 +83,17 @@ body {
     
 }
 .social-links{
-    float: right;
+   margin: 0 auto;
     padding: 10px;
+    text-align: center;
+ justify-content: space-evenly; 
 }
-.linkedin{
-    width:50px;
-     height:50px;
+.social{
+    width:25px;
+     height:25px;
+    
 }
+
 a{
     text-decoration: none;
     color: white;
