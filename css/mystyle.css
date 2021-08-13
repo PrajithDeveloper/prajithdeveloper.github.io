@@ -1,19 +1,21 @@
 body {
-    /* background-color: #6A040F; */
     background-image: linear-gradient(to right, #f48c06, #e85d04);
 }
 
+
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
 .flip-card {
     background-color: transparent;
     width: 300px;
     height: 250px;
-    
     perspective: 1000px;
     /* Remove this if you don't want the 3D effect */
 }
 
+
 /* This container is needed to position the front and back side */
+
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -23,12 +25,16 @@ body {
     transform-style: preserve-3d;
 }
 
+
 /* Do an horizontal flip when you move the mouse over the flip box container */
+
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
+
 /* Position the front and back side */
+
 .flip-card-front,
 .flip-card-back {
     position: absolute;
@@ -39,10 +45,12 @@ body {
     backface-visibility: hidden;
 }
 
+
 /* Style the front side (fallback if image is missing) */
+
 .flip-card-front {
     background-color: rgb(228, 222, 222);
-    color: #f3f3f3f5; 
+    color: #f3f3f3f5;
     font-family: "Audiowide", sans-serif;
     font-size: 14px;
     display: flex;
@@ -50,13 +58,15 @@ body {
     justify-content: center;
 }
 
+
 /* Style the back side */
+
 .flip-card-back {
     background-color: #FB8500;
     color: white;
     transform: rotateY(180deg);
     font-size: 15px;
-    font-family:"Cutive Mono",sans-serif;
+    font-family: "Cutive Mono", sans-serif;
     box-shadow: 5px 5px 10px #e85d04;
 }
 
@@ -76,27 +86,31 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.image{
-    max-width:100%;
-    height:auto;
+
+.image {
+    max-width: 100%;
+    height: auto;
     box-shadow: 5px 5px 10px #C94F03;
-    
-}
-.social-links{
-   margin: 0 auto;
-    padding: 10px;
-    text-align: center;
- justify-content: space-evenly; 
-}
-.social{
-    width:25px;
-     height:25px;
-    
 }
 
-a{
+.social-links {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.social {
+    width: 25px;
+    height: 25px;
+    opacity: 0.5;
+}
+
+.social:hover {
+    opacity: 1.0;
+}
+
+a {
     text-decoration: none;
     color: white;
 }
-
-
